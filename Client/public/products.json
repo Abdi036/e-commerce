@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "type": "laptop",
+    "name": "MacBook Pro",
+    "image": "/laptop.jpg",
+    "price": 1999.99
+  },
+  {
+    "id": 2,
+    "type": "laptop",
+    "name": "Dell XPS 15",
+    "image": "/laptop.jpg",
+    "price": 1499.99
+  },
+  {
+    "id": 3,
+    "type": "laptop",
+    "name": "Lenovo ThinkPad X1 Carbon",
+    "image": "/laptop.jpg",
+    "price": 1799.99
+  },
+  {
+    "id": 4,
+    "type": "tablet",
+    "name": "Apple iPad Pro",
+    "image": "/tablet.jpg",
+    "price": 799.99
+  },
+  {
+    "id": 5,
+    "type": "tablet",
+    "name": "Samsung Galaxy Tab S7",
+    "image": "/tablet.jpg",
+    "price": 649.99
+  },
+  {
+    "id": 6,
+    "type": "tablet",
+    "name": "Microsoft Surface Pro 7",
+    "image": "/tablet.jpg",
+    "price": 899.99
+  },
+  {
+    "id": 7,
+    "type": "tablet",
+    "name": "Amazon Fire HD 10",
+    "image": "/tablet.jpg",
+    "price": 149.99
+  },
+  {
+    "id": 8,
+    "type": "tablet",
+    "name": "Lenovo Yoga Tab 13",
+    "image": "/tablet.jpg",
+    "price": 699.99
+  },
+  {
+    "id": 9,
+    "type": "phone",
+    "name": "iPhone 13 Pro",
+    "image": "/phone.jpg",
+    "price": 999.99
+  },
+  {
+    "id": 10,
+    "type": "phone",
+    "name": "Samsung Galaxy S21 Ultra",
+    "image": "/phone.jpg",
+    "price": 1199.99
+  },
+  {
+    "id": 11,
+    "type": "phone",
+    "name": "Google Pixel 6 Pro",
+    "image": "/phone.jpg",
+    "price": 899.99
+  },
+  {
+    "id": 12,
+    "type": "phone",
+    "name": "OnePlus 9 Pro",
+    "image": "/phone.jpg",
+    "price": 969.99
+  },
+  {
+    "id": 13,
+    "type": "phone",
+    "name": "Xiaomi Mi 11 Ultra",
+    "image": "/phone.jpg",
+    "price": 1199.99
+  }
+]
