@@ -1,19 +1,43 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
+import axios from "axios";
+import { useCart } from "../context/CartContext";
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e) => {
+  const { setUser } = useCart();
+
+  const [error, setError] = useState("");
+  const navigate = useNavigate();
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle sign-in logic
+
+    try {
+      const response = await axios.get("http://localhost:7000/users");
+      const user = response.data.find(
+        (user) => user.email === email && user.password === password
+      );
+
+      if (user) {
+        setUser(user);
+        alert("Login successful");
+        navigate("/products");
+      } else {
+        setError("Invalid email or password");
+      }
+    } catch (err) {
+      setError(err.response?.data?.message || "An error occurred");
+    }
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 bg-white shadow-lg rounded-lg">
         <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
+        {error && <p className="text-red-500 text-center mb-4">{error}</p>}
         <form onSubmit={handleSubmit}>
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700">
@@ -49,7 +73,7 @@ export default function Signin() {
           </button>
         </form>
         <p className="mt-4 text-center text-gray-600">
-          Don&apos;t have an account?{" "}
+          Don&apos;t have an account?
           <NavLink
             to="/signup"
             className="text-indigo-600 font-semibold hover:underline"

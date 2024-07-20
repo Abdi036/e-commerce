@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+
 import { createContext, useState, useContext } from "react";
 
 const CartContext = createContext();
@@ -9,6 +10,7 @@ export const useCart = () => {
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [user, setUser] = useState(null);
 
   //   function to add to cart and check if the product exists
   const addToCart = (product) => {
@@ -46,14 +48,30 @@ export const CartProvider = ({ children }) => {
   };
 
   //   clear Cart
-
   const clearCart = () => {
     setCart([]);
   };
 
+  // Logout
+  const logout = () => {
+    setUser(null);
+    // Redirect to sign-in page
+    window.location.href = "/signin";
+  };
+
+  // { cart, setCart, user, setUser, logout }
   return (
     <CartContext.Provider
-      value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart }}
+      value={{
+        cart,
+        addToCart,
+        removeFromCart,
+        updateQuantity,
+        clearCart,
+        user,
+        setUser,
+        logout,
+      }}
     >
       {children}
     </CartContext.Provider>
