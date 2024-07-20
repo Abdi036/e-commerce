@@ -1,0 +1,186 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "type": "laptop",
+      "name": "MacBook Pro",
+      "image": "/laptop1.jpg",
+      "price": 1999.99,
+      "description": "The latest MacBook Pro with powerful M1 Pro or M1 Max chip, stunning Retina display, and long-lasting battery life.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 512
+      },
+      "brand": "Apple",
+      "model": "MacBook Pro 16-inch (2021)"
+    },
+    {
+      "id": 2,
+      "type": "laptop",
+      "name": "Dell XPS 15",
+      "image": "/laptop2.jpg",
+      "price": 1499.99,
+      "description": "Premium Windows laptop with a sleek design, powerful performance, and a vibrant 4K OLED display.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 512
+      },
+      "brand": "Dell",
+      "model": "XPS 15 (2021)"
+    },
+    {
+      "id": 3,
+      "type": "laptop",
+      "name": "Lenovo ThinkPad X1 Carbon",
+      "image": "/laptop3.jpg",
+      "price": 1799.99,
+      "description": "Durable and lightweight business laptop with excellent performance, security features, and long battery life.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 512
+      },
+      "brand": "Lenovo",
+      "model": "ThinkPad X1 Carbon Gen 9 (2021)"
+    },
+    {
+      "id": 4,
+      "type": "tablet",
+      "name": "Apple iPad Pro",
+      "image": "/tablet1.jpg",
+      "price": 799.99,
+      "description": "High-performance tablet with a stunning Liquid Retina display, powerful M1 chip, and support for Apple Pencil.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 128
+      },
+      "brand": "Apple",
+      "model": "iPad Pro 12.9-inch (2021)"
+    },
+    {
+      "id": 5,
+      "type": "tablet",
+      "name": "Samsung Galaxy Tab S7",
+      "image": "/tablet2.jpg",
+      "price": 649.99,
+      "description": "Premium Android tablet with a high-refresh-rate display, S Pen support, and powerful performance.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 128
+      },
+      "brand": "Samsung",
+      "model": "Galaxy Tab S7 (2020)"
+    },
+    {
+      "id": 6,
+      "type": "tablet",
+      "name": "Microsoft Surface Pro 7",
+      "image": "/tablet3.jpg",
+      "price": 899.99,
+      "description": "Versatile 2-in-1 tablet with a high-resolution PixelSense display, fast performance, and support for Surface Pen.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 256
+      },
+      "brand": "Microsoft",
+      "model": "Surface Pro 7 (2019)"
+    },
+    {
+      "id": 7,
+      "type": "tablet",
+      "name": "Amazon Fire HD 10",
+      "image": "/tablet4.jpg",
+      "price": 149.99,
+      "description": "Affordable Android tablet with a large 10-inch display, decent performance, and long battery life.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 32
+      },
+      "brand": "Amazon",
+      "model": "Fire HD 10 (2021)"
+    },
+    {
+      "id": 8,
+      "type": "tablet",
+      "name": "Lenovo Yoga Tab 13",
+      "image": "/tablet5.jpg",
+      "price": 699.99,
+      "description": "Versatile Android tablet with a unique kickstand design, great display, and impressive battery life.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 128
+      },
+      "brand": "Lenovo",
+      "model": "Yoga Tab 13 (2021)"
+    },
+    {
+      "id": 9,
+      "type": "phone",
+      "name": "iPhone 13 Pro",
+      "image": "/phone1.jpg",
+      "price": 999.99,
+      "description": "The latest flagship iPhone with a stunning Super Retina XDR display, advanced camera system, and powerful A15 Bionic chip.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 256
+      },
+      "brand": "Apple",
+      "model": "iPhone 13 Pro (2021)"
+    },
+    {
+      "id": 10,
+      "type": "phone",
+      "name": "Samsung Galaxy S21 Ultra",
+      "image": "/phone2.jpg",
+      "price": 1199.99,
+      "description": "Premium Android smartphone with a stunning 6.8-inch AMOLED display, advanced camera system, and powerful Exynos 2100 chip.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 256
+      },
+      "brand": "Samsung",
+      "model": "Galaxy S21 Ultra (2021)"
+    },
+    {
+      "id": 11,
+      "type": "phone",
+      "name": "Google Pixel 6 Pro",
+      "image": "/phone3.jpg",
+      "price": 899.99,
+      "description": "Flagship Android smartphone with a stunning 6.71-inch OLED display, advanced camera system, and the powerful Tensor chip.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 128
+      },
+      "brand": "Google",
+      "model": "Pixel 6 Pro (2021)"
+    },
+    {
+      "id": 12,
+      "type": "phone",
+      "name": "OnePlus 9 Pro",
+      "image": "/phone4.jpg",
+      "price": 969.99,
+      "description": "Premium Android smartphone with a 120Hz AMOLED display, Hasselblad-tuned camera system, and powerful Snapdragon 888 chip.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 256
+      },
+      "brand": "OnePlus",
+      "model": "OnePlus 9 Pro (2021)"
+    },
+    {
+      "id": 13,
+      "type": "phone",
+      "name": "Xiaomi Mi 11 Ultra",
+      "image": "/phone5.jpg",
+      "price": 1199.99,
+      "description": "Flagship Android smartphone with a large 6.81-inch AMOLED display, advanced triple-camera system, and powerful Snapdragon 888 chip.",
+      "storage": {
+        "type": "SSD",
+        "capacity": 256
+      },
+      "brand": "Xiaomi",
+      "model": "Mi 11 Ultra (2021)"
+    }
+  ]
+}

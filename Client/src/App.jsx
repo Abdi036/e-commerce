@@ -9,6 +9,7 @@ import Cart from "./pages/Cart";
 import Signin from "./pages/Signin";
 import { CartProvider } from "./context/CartContext";
 import Signup from "./pages/Signup";
+import ProductDetail from "./pages/ProductDetail";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/laptops" element={<Laptops />} />
           <Route path="/tablets" element={<Tablets />} />
           <Route path="/products" element={<Product />} />
+          <Route path="/products/:productId" element={<ProductDetail />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/cart" element={<Cart />} />
