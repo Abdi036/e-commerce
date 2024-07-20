@@ -10,24 +10,51 @@ export const useCart = () => {
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
+  //   function to add to cart and check if the product exists
   const addToCart = (product) => {
     setCart((prevCart) => {
-      // Check if the product is already in the cart
-      if (prevCart.some((item) => item.id === product.id)) {
-        return prevCart;
+      const existingProductIndex = prevCart.findIndex(
+        (item) => item.id === product.id
+      );
+
+      if (existingProductIndex >= 0) {
+        // If the product already exists in the cart, increase its quantity
+        const updatedCart = [...prevCart];
+        updatedCart[existingProductIndex].quantity += 1;
+        return updatedCart;
+      } else {
+        // Otherwise, add the product to the cart with quantity 1
+        return [...prevCart, { ...product, quantity: 1 }];
       }
-      return [...prevCart, product];
     });
   };
 
-  function removeFromCart(productId) {
+  //   remove from cart
+  const removeFromCart = (productId) => {
     setCart((prevCart) =>
       prevCart.filter((product) => product.id !== productId)
     );
-  }
+  };
+
+  //   increase or decreace quantity
+  const updateQuantity = (productId, quantity) => {
+    setCart((prevCart) => {
+      return prevCart.map((product) =>
+        product.id === productId ? { ...product, quantity } : product
+      );
+    });
+  };
+
+  //   clear Cart
+
+  const clearCart = () => {
+    setCart([]);
+  };
 
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{ cart, addToCart, removeFromCart, updateQuantity, clearCart }}
+    >
       {children}
     </CartContext.Provider>
   );

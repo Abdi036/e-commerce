@@ -1,6 +1,6 @@
+/* eslint-disable react/prop-types */
 import { useCart } from "../context/CartContext";
 
-/* eslint-disable react/prop-types */
 function Item({ product }) {
   const { addToCart } = useCart();
 
@@ -13,7 +13,7 @@ function Item({ product }) {
       />
       <div className="p-4">
         <h3 className="text-xl font-semibold mb-2">{product.name}</h3>
-        <p className="text-gray-700 mb-4">${product.price}</p>
+        <p className="text-gray-700 mb-4">Price: ${product.price}</p>
         <button
           className="bg-red-500 text-white font-bold py-2 px-4 rounded hover:bg-red-700"
           onClick={() => addToCart(product)}
