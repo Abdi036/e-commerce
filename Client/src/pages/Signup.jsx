@@ -1,20 +1,34 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Signin() {
+export default function Signup() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle sign-in logic
+    // Handle sign-up logic
   };
 
   return (
     <div className="flex items-center justify-center min-h-screen bg-gray-100">
       <div className="w-full max-w-md p-8 bg-white shadow-lg rounded-lg">
-        <h2 className="text-2xl font-bold text-center mb-6">Sign In</h2>
+        <h2 className="text-2xl font-bold text-center mb-6">Sign Up</h2>
         <form onSubmit={handleSubmit}>
+          <div className="mb-4">
+            <label htmlFor="name" className="block text-gray-700">
+              Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              className="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+              required
+            />
+          </div>
           <div className="mb-4">
             <label htmlFor="email" className="block text-gray-700">
               Email
@@ -45,16 +59,16 @@ export default function Signin() {
             type="submit"
             className="w-full py-3 bg-indigo-600 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 transition duration-300"
           >
-            Sign In
+            Sign Up
           </button>
         </form>
         <p className="mt-4 text-center text-gray-600">
-          Don&apos;t have an account?{" "}
+          Already have an account?
           <NavLink
-            to="/signup"
+            to="/signin"
             className="text-indigo-600 font-semibold hover:underline"
           >
-            Sign Up
+            Sign In
           </NavLink>
         </p>
       </div>
