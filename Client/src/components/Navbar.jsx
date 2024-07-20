@@ -1,10 +1,10 @@
-import { useCart } from "../context/CartContext";
+import { UseCart } from "../context/CartContext";
 
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
 export default function Navbar() {
-  const { cart, user, logout } = useCart();
+  const { cart, user, logout } = UseCart();
 
   return (
     <nav className="bg-gray-800 p-4 sticky top-0">

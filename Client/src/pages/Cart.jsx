@@ -1,7 +1,7 @@
-import { useCart } from "../context/CartContext";
+import { UseCart } from "../context/CartContext";
 
 function Cart() {
-  const { cart, removeFromCart, updateQuantity, clearCart } = useCart();
+  const { cart, removeFromCart, updateQuantity, clearCart } = UseCart();
 
   // Calculate total price
   const totalPrice = cart.reduce(

@@ -1,8 +1,8 @@
 /* eslint-disable react/prop-types */
-import { useCart } from "../context/CartContext";
+import { UseCart } from "../context/CartContext";
 
 export default function Button({ product, children }) {
-  const { addToCart } = useCart();
+  const { addToCart } = UseCart();
 
   return (
     <div>

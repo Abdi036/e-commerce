@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import axios from "axios";
-import { useCart } from "../context/CartContext";
+import { UseCart } from "../context/CartContext";
 
 export default function Signin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
-  const { setUser } = useCart();
+  const { setUser } = UseCart();
 
   const [error, setError] = useState("");
   const navigate = useNavigate();

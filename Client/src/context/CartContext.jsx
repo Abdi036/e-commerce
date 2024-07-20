@@ -4,7 +4,7 @@ import { createContext, useState, useContext } from "react";
 
 const CartContext = createContext();
 
-export const useCart = () => {
+export const UseCart = () => {
   return useContext(CartContext);
 };
 
