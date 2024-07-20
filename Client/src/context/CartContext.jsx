@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-
 import { createContext, useState, useContext } from "react";
 
 const CartContext = createContext();
@@ -14,6 +13,9 @@ export const CartProvider = ({ children }) => {
 
   //   function to add to cart and check if the product exists
   const addToCart = (product) => {
+    if (!user) {
+      window.location.href = "/signin";
+    }
     setCart((prevCart) => {
       const existingProductIndex = prevCart.findIndex(
         (item) => item.id === product.id

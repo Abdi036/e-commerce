@@ -8,8 +8,8 @@
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
-    "server": "json-server --watch src/utils/products.json --port 8000",
-    "server2": "json-server --watch src/utils/users.json --port 7000"
+    "server": "json-server --watch utils/products.json --port 8000",
+    "server2": "json-server --watch utils/users.json --port 7000"
   },
   "dependencies": {
     "axios": "^1.7.2",
