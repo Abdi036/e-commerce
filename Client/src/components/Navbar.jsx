@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
+import { useCart } from "../context/CartContext";
 
 export default function Navbar() {
+  const { cart } = useCart();
   return (
     <nav className="bg-gray-800 p-4 sticky top-0">
       <div className="container mx-auto flex justify-between items-center">
@@ -67,7 +69,7 @@ export default function Navbar() {
           <NavLink to="/cart" className="relative">
             <FaShoppingCart className="text-gray-300 hover:text-white text-xl" />
             <span className="absolute top-[-5px] right-[-6px] bg-red-500 text-white text-xs rounded-full px-1">
-              0
+              {cart.length}
             </span>
           </NavLink>
         </div>

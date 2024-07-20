@@ -7,10 +7,12 @@ import Tablets from "./pages/Tablets";
 import Product from "./pages/Product";
 import Cart from "./pages/Cart";
 import Signin from "./pages/Signin";
+import { CartProvider } from "./context/CartContext";
 
 function App() {
   return (
-    <BrowserRouter>
+   <CartProvider>
+     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Shop />} />
@@ -24,6 +26,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
       </Routes>
     </BrowserRouter>
+   </CartProvider>
   );
 }
 
