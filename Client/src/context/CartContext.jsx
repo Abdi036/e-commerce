@@ -10,9 +10,15 @@ export const useCart = () => {
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
 
-  function addToCart(product) {
-    setCart((prevCart) => [...prevCart, product]);
-  }
+  const addToCart = (product) => {
+    setCart((prevCart) => {
+      // Check if the product is already in the cart
+      if (prevCart.some((item) => item.id === product.id)) {
+        return prevCart;
+      }
+      return [...prevCart, product];
+    });
+  };
 
   function removeFromCart(productId) {
     setCart((prevCart) =>
