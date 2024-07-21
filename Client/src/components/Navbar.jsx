@@ -11,9 +11,14 @@ export default function Navbar() {
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo */}
         <NavLink to="/" className="text-white text-lg font-bold font-serif">
-          Logo
+          <span>
+            <img
+              src="/icons8-laptop-100.png"
+              alt="logo_Icon"
+              className="w-8 h-8 rounded-full"
+            />
+          </span>
         </NavLink>
-
         {/* Links */}
         <div className="hidden md:flex space-x-4">
           <NavLink

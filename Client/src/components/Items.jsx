@@ -1,7 +1,6 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
 import Button from "./Button";
-// import { UseCart } from "../context/CartContext";
 
 function Item({ product }) {
   return (
